@@ -12,7 +12,7 @@ let activeMember = 0
 
 const images = document.getElementById("images")
 const menu = document.getElementById("menu")
-const nameText = document.getElementById("member__name")
+const memberName = document.getElementById("member__name")
 
 function changeStatusButtons() {
   
@@ -34,6 +34,7 @@ function navigationMember(direction) {
   console.log(activeMember, member);
 
   images.style.transform =`translateY(${-100 * activeMember}vh)`
+  memberName.classList = member.id
 
   changeStatusButtons()
 
